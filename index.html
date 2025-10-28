@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konoha Chronicles: O Legado de Naruto</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand custom-logo" href="index.html">Konoha Chronicles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" aria-current="page" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#about-naruto">A Saga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#team7">Time 7</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#blog-posts">Artigos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="home" class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+            <div class="hero-overlay"></div> 
+            <div class="container" style="position: relative; z-index: 1;">
+                <h1 class="display-3 fw-bold">O Ninja Mais Barulhento do Mundo</h1>
+                <p class="lead mt-4 mb-5 text-light-gray">A jornada de um párias à Sombra do Fogo. Prepare-se para conhecer o maior legado ninja.</p>
+                <a href="#team7" class="btn btn-lg custom-btn-primary">Conheça o Time 7 <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+        </section>
+
+        
+        <section id="about-naruto" class="py-5 bg-secondary-dark">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="img/classico.jpg" class="img-fluid rounded shadow-lg" alt="Naruto, Sasuke e Sakura juntos em pose dinâmica, mostrando o Time 7 unido.">
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-start mt-4 mt-lg-0">
+                        <h2 class="display-5 fw-bold text-orange mb-4">A Luta Pela Aceitação</h2>
+                        <p class="lead text-muted">Naruto é mais do que um anime de ação; é a crônica de um jovem que, carregando um fardo terrível e enfrentando o desprezo, recusou-se a desistir de seu sonho. Sua determinação em se tornar Hokage, o líder mais forte de Konoha, o levou a forjar laços inquebráveis e a inspirar um mundo inteiro.</p>
+                        <p class="text-muted">Da Academia Ninja aos campos de batalha da Grande Guerra, a história de Naruto nos ensina sobre o verdadeiro poder da amizade e da perseverança. Descubra como ele transformou a dor em força.</p>
+                        <a href="historia.html" class="btn mt-3 custom-btn-secondary">Explorar a História Completa <i class="fas fa-book-open ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="team7" class="py-5 bg-primary-dark text-white">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold text-orange mb-5">O Lendário Time 7: Destinos Interligados</h2>
+                <div class="row justify-content-center g-4">
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card member-card" data-member="naruto">
+                            <img src="img/narutin.jpg" class="card-img-top img-fluid member-img" alt="Naruto Uzumaki">
+                            <div class="card-body">
+                                <h5 class="card-title text-orange fs-4">Naruto Uzumaki</h5>
+                                <p class="card-text text-muted">O Sétimo Hokage e Herói da Folha.</p>
+                                <a href="#" class="btn btn-sm custom-btn-primary mt-3 view-details" data-bs-toggle="modal" data-bs-target="#memberModal" data-member="naruto">Ver Perfil <i class="fas fa-info-circle ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card member-card" data-member="sasuke">
+                            <img src="img/sasuke.jpg" class="card-img-top img-fluid member-img" alt="Sasuke Uchiha">
+                            <div class="card-body">
+                                <h5 class="card-title text-orange fs-4">Sasuke Uchiha</h5>
+                                <p class="card-text text-muted">O último Uchiha, a Sombra do Hokage.</p>
+                                <a href="#" class="btn btn-sm custom-btn-primary mt-3 view-details" data-bs-toggle="modal" data-bs-target="#memberModal" data-member="sasuke">Ver Perfil <i class="fas fa-info-circle ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card member-card" data-member="sakura">
+                            <img src="img/sakura.jpg" class="card-img-top img-fluid member-img" alt="Sakura Haruno">
+                            <div class="card-body">
+                                <h5 class="card-title text-orange fs-4">Sakura Haruno</h5>
+                                <p class="card-text text-muted">A Kunoichi médica de força devastadora.</p>
+                                <a href="#" class="btn btn-sm custom-btn-primary mt-3 view-details" data-bs-toggle="modal" data-bs-target="#memberModal" data-member="sakura">Ver Perfil <i class="fas fa-info-circle ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 custom-card member-card" data-member="kakashi">
+                            <img src="img/kakashi.jpg" class="card-img-top img-fluid member-img" alt="Kakashi Hatake">
+                            <div class="card-body">
+                                <h5 class="card-title text-orange fs-4">Kakashi Hatake</h5>
+                                <p class="card-text text-muted">O Sexto Hokage e o Ninja Copiador.</p>
+                                <a href="#" class="btn btn-sm custom-btn-primary mt-3 view-details" data-bs-toggle="modal" data-bs-target="#memberModal" data-member="kakashi">Ver Perfil <i class="fas fa-info-circle ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="blog-posts" class="py-5 bg-secondary-dark">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold text-orange mb-5">Artigos Ninja Recentes</h2>
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 blog-card shadow-sm">
+                            <img src="img/simbolos.jpg" class="card-img-top img-fluid" alt="Símbolos dos Clãs de Konoha">
+                            <div class="card-body text-start">
+                                <h5 class="card-title text-orange">A Evolução dos Jutsus: Do Genin ao Kage</h5>
+                                <p class="card-text text-muted">Análise aprofundada sobre a curva de aprendizado e as técnicas secretas mais poderosas do mundo ninja.</p>
+                                <a href="#home" class="btn btn-link custom-link">Continue Lendo <i class="fas fa-arrow-up ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 blog-card shadow-sm">
+                            <img src="img/simbolos.jpg" class="card-img-top img-fluid" alt="Símbolos das Vilas Ninjas">
+                            <div class="card-body text-start">
+                                <h5 class="card-title text-orange">Top 5 Batalhas Mais Épicas de Naruto</h5>
+                                <p class="card-text text-muted">Relembre os confrontos que definiram eras e personagens, de Madara a Pain.</p>
+                                <a href="#home" class="btn btn-link custom-link">Continue Lendo <i class="fas fa-arrow-up ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 blog-card shadow-sm">
+                            <img src="img/simbolos.jpg" class="card-img-top img-fluid" alt="Símbolos dos Elementos Chakra">
+                            <div class="card-body text-start">
+                                <h5 class="card-title text-orange">Aliança Shinobi: As Cinco Grandes Nações Unidas</h5>
+                                <p class="card-text text-muted">Um mergulho nas culturas e mistérios das outras vilas ocultas após a Quarta Guerra.</p>
+                                <a href="#home" class="btn btn-link custom-link">Continue Lendo <i class="fas fa-arrow-up ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary-dark text-white py-4 text-center">
+        <div class="container">
+            <p class="mb-2 text-muted">&copy; 2023 Konoha Chronicles. Todos os direitos reservados. Fã-Site.</p>
+            <div class="social-links mt-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    
+    <div class="modal fade" id="memberModal" tabindex="-1" aria-labelledby="memberModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-header custom-modal-header text-white">
+                    <h5 class="modal-title fs-3" id="memberModalLabel">Detalhes do Personagem</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body custom-modal-body">
+                    
+                    <div class="row">
+                        <div class="col-md-5 mb-3 mb-md-0">
+                            <img id="modalMemberImage" src="" class="img-fluid rounded shadow" alt="Imagem do Membro">
+                        </div>
+                        <div class="col-md-7 text-start">
+                            <h4 id="modalMemberName" class="text-orange fw-bold mb-3"></h4>
+                            <p id="modalMemberDescription" class="text-muted"></p>
+                            <h5 class="text-orange mt-4 mb-2">Habilidades Notáveis:</h5>
+                            <ul id="modalMemberSkills" class="list-unstyled text-muted">
+                                
+                            </ul>
+                            <h5 class="text-orange mt-4 mb-2">Legado:</h5>
+                            <p id="modalMemberLegacy" class="text-muted"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

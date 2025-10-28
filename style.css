@@ -1,0 +1,257 @@
+
+:root {
+    --primary-bg: #1a1a1a; 
+    --secondary-bg: #2c2c2c; 
+    --naruto-orange: #f7931a; 
+    --naruto-red: #e74c3c; 
+    --naruto-light-gray: #f0f0f0;
+    --naruto-text-muted: #aaaaaa; /
+
+    /* Fontes */
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.7;
+    color: var(--naruto-light-gray);
+    background-color: var(--primary-bg);
+    scroll-behavior: smooth;
+}
+
+/* Base de Cores para o Site */
+.text-orange { color: var(--naruto-orange) !important; }
+.bg-secondary-dark { background-color: var(--secondary-bg) !important; }
+.bg-primary-dark { background-color: var(--primary-bg) !important; }
+.text-muted { color: var(--naruto-text-muted) !important; }
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--naruto-light-gray);
+}
+h2.text-orange {
+    color: var(--naruto-orange) !important;
+}
+
+
+.custom-navbar {
+    background-color: var(--primary-bg);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(247, 147, 26, 0.2);
+    z-index: 1050; /* Z-index alto para ficar acima de tudo */
+}
+
+.custom-logo {
+    font-family: var(--font-heading);
+    color: var(--naruto-orange) !important;
+    font-weight: 700;
+}
+
+.custom-nav-link {
+    color: var(--naruto-light-gray) !important;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.custom-nav-link:hover,
+.custom-nav-link.active {
+    color: var(--naruto-orange) !important;
+    border-bottom: 2px solid var(--naruto-orange);
+    background-color: transparent !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28247, 147, 26, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+/* Hero Section */
+.hero-section {
+
+    background: url('img/olhonaruto.jpg') no-repeat center center/cover;
+    
+    color: var(--naruto-light-gray);
+    min-height: 85vh;
+    position: relative;
+    padding: 150px 0;
+    overflow: hidden;
+    filter: saturate(0.8) brightness(0.8);
+}
+
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); 
+    z-index: 0;
+}
+
+
+.custom-btn-primary {
+    background-color: var(--naruto-orange);
+    border-color: var(--naruto-orange);
+    transition: all 0.3s ease;
+    font-weight: 600;
+    padding: 12px 30px;
+    text-transform: uppercase;
+}
+
+.custom-btn-primary:hover {
+    background-color: #e68a15; /* Laranja escuro */
+    border-color: #e68a15;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(247, 147, 26, 0.4);
+}
+
+.custom-btn-secondary {
+    border-color: var(--naruto-orange);
+    color: var(--naruto-orange);
+    transition: all 0.3s ease;
+    font-weight: 600;
+    padding: 10px 25px;
+}
+
+.custom-btn-secondary:hover {
+    background-color: var(--naruto-orange);
+    color: var(--primary-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(247, 147, 26, 0.3);
+}
+
+
+/* About Section */
+#about-naruto img {
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+    border: 3px solid var(--naruto-orange);
+}
+
+#about-naruto img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(247, 147, 26, 0.1);
+}
+
+
+/* Team 7 Cards */
+.custom-card {
+    background-color: var(--secondary-bg);
+    border: 1px solid rgba(247, 147, 26, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(247, 147, 26, 0.2);
+}
+
+.member-img {
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--naruto-orange);
+}
+
+
+/* Blog Cards */
+.blog-card {
+    background-color: var(--secondary-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.custom-link {
+    color: var(--naruto-orange);
+    font-weight: 600;
+    text-decoration: none; /* Garante que não tenha sublinhado padrão */
+    transition: color 0.3s ease;
+}
+.custom-link:hover {
+    color: var(--naruto-red);
+}
+
+
+/* Modal (Pop-up) */
+.custom-modal-content {
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--naruto-orange);
+}
+
+.custom-modal-header {
+    background-color: var(--primary-bg);
+    border-bottom: 2px solid var(--naruto-orange);
+}
+
+.custom-modal-body h5 {
+    color: var(--naruto-orange);
+    border-bottom: 1px solid rgba(247, 147, 26, 0.2);
+}
+
+.custom-modal-body ul li i {
+    color: var(--naruto-orange);
+}
+.custom-modal-body ul li strong {
+    color: var(--naruto-orange);
+}
+
+/* Footer */
+footer {
+    border-top: 3px solid var(--naruto-orange);
+}
+
+/* Responsividade - Ajustes Finos */
+@media (max-width: 991.98px) {
+    .hero-section h1 {
+        font-size: 3.5rem;
+    }
+    .hero-section {
+        min-height: 70vh;
+    }
+    .custom-nav-link:hover, .custom-nav-link.active {
+        border-bottom: none;
+        background-color: rgba(247, 147, 26, 0.1) !important;
+    }
+    .member-img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
+    .member-img {
+        height: 200px;
+    }
+    h2.display-5 {
+        font-size: 2rem;
+    }
+}
+/* Imagens da Linha do Tempo */
+.history-img {
+    height: 350px; 
+    object-fit: cover;
+    width: 100%; 
+    border-radius: 10px;
+    border: 3px solid var(--naruto-orange);
+    transition: transform 0.3s ease;
+}
+
+.history-img:hover {
+    transform: scale(1.02);
+}
