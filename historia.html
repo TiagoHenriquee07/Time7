@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>História Completa de Naruto: A Lenda</title>
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
@@ -23,7 +20,7 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="index.html">Voltar ao Início</a>
+                        <a class="nav-link custom-nav-link" href="index.html"><i class="fas fa-arrow-left me-2"></i>Voltar ao Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link custom-nav-link" href="#pre-shippuden">Naruto Clássico</a>
@@ -40,96 +37,114 @@
     </header>
 
     <main>
-        <section id="history-hero" class="bg-primary-dark d-flex align-items-center justify-content-center text-center text-white py-5" style="min-height: 50vh; background-image: url('https://w.forfun.com/fetch/f2/f2a74421b5f7e53f1244b2075f795797.jpeg'); background-size: cover; background-position: center; border-bottom: 3px solid var(--naruto-orange);">
-            <div class="container bg-primary-dark p-4 rounded-3 bg-opacity-75">
-                <h1 class="display-3 fw-bold text-orange">A Lenda Completa: Do Genin ao Hokage</h1>
-                <p class="lead mt-4 mb-5 text-light-gray">Uma análise cronológica da jornada de Naruto Uzumaki, o herói que salvou o mundo shinobi.</p>
-                <a href="#pre-shippuden" class="btn btn-lg custom-btn-primary">Iniciar Leitura <i class="fas fa-arrow-down ms-2"></i></a>
+        <section id="history-hero" class="d-flex align-items-center justify-content-center text-center text-white py-5">
+            <div class="container p-4">
+                <h1 class="display-3 fw-bold text-orange text-uppercase">A Lenda Completa</h1>
+                <div class="section-title-divider"></div>
+                <p class="lead mt-3 mb-5 text-white fs-4 fw-light">Do pequeno Genin barulhento ao maior Hokage da história.</p>
+                <a href="#pre-shippuden" class="btn btn-lg custom-btn-primary">Abrir o Pergaminho do Tempo <i class="fas fa-scroll ms-2"></i></a>
             </div>
         </section>
 
-        <section id="pre-shippuden" class="py-5 bg-secondary-dark text-white">
-            <div class="container text-start">
-                <h2 class="display-5 fw-bold text-orange mb-5 text-center">I. Naruto Clássico: A Busca por Reconhecimento</h2>
+        <section id="pre-shippuden" class="py-5 history-section text-white">
+            <div class="container text-start py-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold text-orange text-uppercase">I. O Início da Jornada</h2>
+                    <div class="section-title-divider"></div>
+                </div>
                 
-                <div class="row align-items-center mb-5">
-                    <div class="col-md-7">
-                        <h3 class="fw-bold text-orange mb-3">O Pária e o Time 7</h3>
-                        <p class="text-muted">A história começa com Naruto, um jovem órfão que carrega o demônio Raposa de Nove Caudas selado em seu corpo, o que causa o medo e a rejeição dos moradores de Konoha. Seu sonho é se tornar Hokage para ser reconhecido e amado por todos. Na Academia Ninja, ele se forma e é colocado no Time 7, ao lado do gênio Sasuke Uchiha e da inteligente Sakura Haruno, sob a liderança de Kakashi Hatake.</p>
-                        <p class="text-muted">O teste de sobrevivência de Kakashi os força a aprenderem a importância do trabalho em equipe, marcando o início de uma amizade e rivalidade que definiria o destino do mundo.</p>
+                <div class="row align-items-center mb-5 g-5">
+                    <div class="col-lg-7">
+                        <h3 class="history-subtitle mb-4"><i class="fas fa-seedling"></i> O Pária e o Time 7</h3>
+                        <p class="text-muted lead">A história começa com Naruto, um jovem órfão que carrega o demônio Raposa de Nove Caudas selado em seu corpo, o que causa o medo e a rejeição dos moradores de Konoha. Seu sonho é se tornar Hokage para ser reconhecido e amado por todos.</p>
+                        <p class="text-muted">Na Academia Ninja, ele se forma e é colocado no Time 7, ao lado do gênio Sasuke Uchiha e da inteligente Sakura Haruno, sob a liderança de Kakashi Hatake. O teste de sobrevivência de Kakashi os força a aprenderem a importância do trabalho em equipe.</p>
                     </div>
-                    <div class="col-md-5">
-                        <img src="img/classico.jpg" class="img-fluid rounded shadow history-img" alt="Time 7 Clássico">
+                    <div class="col-lg-5">
+                        <img src="img/classico.jpg" class="img-fluid rounded history-img" alt="Time 7 Clássico">
                     </div>
                 </div>
                 
-                <div class="row align-items-center flex-row-reverse">
-                    <div class="col-md-7">
-                        <h3 class="fw-bold text-orange mb-3">O Exame Chunin e a Traição</h3>
-                        <p class="text-muted">Durante o Exame Chunin, o Time 7 se depara com a ameaça de Orochimaru, um dos Sannin Lendários. Naruto começa a despertar seu potencial, usando o chakra da Raposa. No entanto, a ambição de Sasuke de superar seu irmão, Itachi, e o poder de Orochimaru o levam a abandonar Konoha em busca de mais poder. A primeira grande missão de Naruto é tentar trazer Sasuke de volta, culminando na épica batalha no Vale do Fim.</p>
-                        <p class="text-muted">Naruto falha em sua missão, mas jura nunca desistir de seu amigo, iniciando sua jornada de treinamento com Jiraiya, outro Sannin Lendário.</p>
+                <div class="row align-items-center flex-row-reverse mt-5 g-5">
+                    <div class="col-lg-7">
+                        <h3 class="history-subtitle mb-4"><i class="fas fa-heart-broken"></i> A Dor da Traição</h3>
+                        <p class="text-muted lead">Durante o Exame Chunin, o Time 7 se depara com a ameaça de Orochimaru. Naruto começa a despertar seu potencial, mas a ambição de Sasuke o leva a abandonar Konoha em busca de poder.</p>
+                        <p class="text-muted">A primeira grande missão de Naruto é tentar trazer Sasuke de volta, culminando na épica e dolorosa batalha no Vale do Fim. Naruto falha, mas jura nunca desistir de seu amigo, iniciando sua jornada de treinamento de três anos com o Mestre Jiraiya.</p>
                     </div>
-                    <div class="col-md-5">
-                        <img src="img/cunin.jpg" class="img-fluid rounded shadow history-img" alt="Naruto vs Sasuke no Vale do Fim">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="shippuden" class="py-5 bg-primary-dark text-white">
-            <div class="container text-start">
-                <h2 class="display-5 fw-bold text-orange mb-5 text-center">II. Naruto Shippuden: A Guerra e a Paz</h2>
-                
-                <div class="row align-items-center mb-5">
-                    <div class="col-md-7">
-                        <h3 class="fw-bold text-orange mb-3">O Retorno e a Akatsuki</h3>
-                        <p class="text-muted">Naruto retorna a Konoha mais forte após três anos de treinamento. A organização criminosa Akatsuki intensifica sua caçada às Bestas com Cauda. O foco da saga se volta para o resgate de Gaara e a caçada a Itachi Uchiha, enquanto Naruto tenta aperfeiçoar o Rasengan, criando o Rasenshuriken.</p>
-                        <p class="text-muted">O reencontro com Sasuke mostra a distância de poder entre eles, e a dor de Naruto aumenta com a morte de seu mestre, Jiraiya, pelas mãos de Pain, o líder da Akatsuki.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <img src="img/akatsuki.jpg" class="img-fluid rounded shadow history-img" alt="Membros da Akatsuki ou Jiraiya e Naruto">
-                    </div>
-                </div>
-                
-                <div class="row align-items-center flex-row-reverse mb-5">
-                    <div class="col-md-7">
-                        <h3 class="fw-bold text-orange mb-3">A Invasão de Pain e o Modo Sábio</h3>
-                        <p class="text-muted">Pain destrói Konoha, e Naruto chega para confrontá-lo, agora mestre do Modo Sábio. Após uma batalha épica, Naruto derrota Pain e, através de sua filosofia de paz, consegue convencer Nagato a ressuscitar todos os que foram mortos no ataque. Naruto é aclamado como um herói e a nova esperança do mundo shinobi.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <img src="img/narutosabio.jpg" class="img-fluid rounded shadow history-img" alt="Naruto Modo Sábio contra Pain">
-                    </div>
-                </div>
-                
-                <div class="row align-items-center">
-                    <div class="col-md-7">
-                        <h3 class="fw-bold text-orange mb-3">A Grande Guerra Ninja e a Vitória</h3>
-                        <p class="text-muted">A Quarta Grande Guerra Ninja eclode. Naruto e Bee se unem às forças da Aliança Shinobi contra Madara, Obito e o exército de Zetsus. Naruto finalmente domina o poder da Kyuubi. Ele e Sasuke se unem contra a ameaça final de Kaguya Ōtsutsuki.</p>
-                    </div>
-                    <div class="col-md-5">
-                        <img src="img/guerraninja.jpg" class="img-fluid rounded shadow history-img" alt="Naruto e Sasuke na Guerra Ninja">
+                    <div class="col-lg-5">
+                        <img src="img/cunin.jpg" class="img-fluid rounded history-img" alt="Naruto vs Sasuke no Vale do Fim">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="legado" class="py-5 bg-secondary-dark text-white text-center">
-            <div class="container">
-                <h2 class="display-5 fw-bold text-orange mb-4">III. O Legado: A Era Hokage</h2>
+        <section id="shippuden" class="py-5 bg-primary-dark text-white" style="border-top: 2px solid rgba(247, 147, 26, 0.2);">
+            <div class="container text-start py-4">
+                <div class="text-center mb-5">
+                     <h2 class="display-5 fw-bold text-orange text-uppercase">II. Shippuden: A Era das Sombras</h2>
+                     <div class="section-title-divider"></div>
+                </div>
+                
+                <div class="row align-items-center mb-5 g-5">
+                    <div class="col-lg-7">
+                        <h3 class="history-subtitle mb-4"><i class="fas fa-cloud-moon"></i> A Ameaça da Akatsuki</h3>
+                        <p class="text-muted lead">Naruto retorna a Konoha mais forte. A organização criminosa Akatsuki intensifica sua caçada às Bestas com Cauda. O foco se volta para o resgate de Gaara e a busca por Itachi Uchiha, enquanto Naruto aperfeiçoa o Rasengan, criando o letal Rasenshuriken.</p>
+                        <p class="text-muted">O reencontro com Sasuke mostra a distância de poder entre eles, e a dor de Naruto atinge o ápice com a morte de seu mestre, Jiraiya, pelas mãos de Pain, o líder da Akatsuki.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="img/akatsuki.jpg" class="img-fluid rounded history-img" alt="Ameaça da Akatsuki">
+                    </div>
+                </div>
+                
+                <div class="row align-items-center flex-row-reverse mt-5 g-5">
+                    <div class="col-lg-7">
+                         <h3 class="history-subtitle mb-4"><i class="fas fa-frog"></i> O Herói de Konoha</h3>
+                        <p class="text-muted lead">Pain destrói Konoha, e Naruto chega para confrontá-lo, agora mestre do Modo Sábio dos Sapos. Após uma batalha que desafia os limites, Naruto derrota Pain não apenas com força, mas com sua filosofia.</p>
+                        <p class="text-muted">Ele convence Nagato a ressuscitar as vítimas do ataque. Ao retornar, Naruto é aclamado como o verdadeiro herói da vila, um passo crucial para seu sonho.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="img/narutosabio.jpg" class="img-fluid rounded history-img" alt="Naruto Modo Sábio">
+                    </div>
+                </div>
+
+                <div class="row align-items-center mt-5 g-5">
+                    <div class="col-lg-7">
+                         <h3 class="history-subtitle mb-4"><i class="fas fa-shield-alt"></i> A Quarta Grande Guerra Ninja</h3>
+                        <p class="text-muted lead">A maior guerra da história eclode. Naruto finalmente domina o poder da Kyuubi (Kurama) e se une às forças da Aliança Shinobi contra lendas ressuscitadas como Madara e Obito.</p>
+                        <p class="text-muted">Em um clímax divino, ele e Sasuke unem forças para selar a progenitora do chakra, Kaguya Ōtsutsuki, salvando o mundo da aniquilação total.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="img/guerraninja.jpg" class="img-fluid rounded history-img" alt="Guerra Ninja">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="legado" class="py-5 history-section text-white text-center" style="border-top: 2px solid rgba(247, 147, 26, 0.2);">
+            <div class="container py-4">
+                 <h2 class="display-5 fw-bold text-orange text-uppercase mb-4">III. O Legado do Nanadaime</h2>
+                 <div class="section-title-divider mb-5"></div>
+
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <p class="lead text-light-gray">Após a guerra, Naruto, Sasuke e Sakura continuam a proteger o novo mundo. Naruto finalmente realiza seu sonho e se torna o **Sétimo Hokage**, aclamado por toda a aldeia.</p>
-                        <p class="text-muted">Seu legado é uma era de paz e modernidade. O 'Ninja Número 1, Surpreendente e Hiperativo' cumpriu sua promessa. Ele se casa com Hinata Hyūga, e o Time 7, agora adultos, se torna a fundação do futuro de Konoha.</p>
-                        <h4 class="fw-bold mt-5 text-orange">"Eu nunca voltarei atrás na minha palavra. **Este é o meu jeito ninja!**"</h4>
-                        <img src="img/meujeitoninja.jpg" class="img-fluid rounded shadow-lg mt-4 history-img" style="max-width: 500px;" alt="Naruto, o Sétimo Hokage, representando seu jeito ninja de nunca desistir.">
+                        <p class="lead text-light-gray mb-4">Após a guerra e uma última batalha decisiva contra Sasuke para definir o futuro do mundo ninja, a paz finalmente reina. Naruto Uzumaki realiza seu sonho de infância.</p>
+                        
+                        <div class="legacy-quote">
+                            "Eu nunca voltarei atrás na minha palavra. <br><strong>Este é o meu jeito ninja!</strong>"
+                        </div>
+                        
+                        <p class="text-muted">Ele se torna o Sétimo Hokage, casa-se com Hinata Hyūga e lidera Konoha em uma nova era de modernidade e união entre as vilas. O garoto que era evitado por todos se tornou o pilar que sustenta o mundo.</p>
+                        
+                        <div class="mt-5">
+                             <img src="img/meujeitoninja.jpg" class="img-fluid rounded mt-4 history-img" style="max-width: 600px;" alt="Naruto Sétimo Hokage">
+                        </div>
                     </div>
                 </div>
-                <a href="index.html" class="btn btn-lg custom-btn-primary mt-5">VOLTAR AO BLOG PRINCIPAL <i class="fas fa-home ms-2"></i></a>
+                <a href="index.html" class="btn btn-lg custom-btn-primary mt-5 text-uppercase">Voltar <i class="fas fa-home ms-2"></i></a>
             </div>
         </section>
     </main>
 
-    <footer class="bg-primary-dark text-white py-4 text-center">
+    <footer class="bg-primary-dark text-white py-4 text-center" style="border-top: 3px solid var(--naruto-orange);">
         <div class="container">
             <p class="mb-2 text-muted">&copy; 2023 Konoha Chronicles. Todos os direitos reservados. Fã-Site.</p>
             <div class="social-links mt-3">
@@ -140,27 +155,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-
-                if (targetElement) {
-                    const headerOffset = document.querySelector('.custom-navbar').offsetHeight; 
-                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                    const offsetPosition = elementPosition - headerOffset;
-
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: "smooth"
-                    });
-                }
-            });
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    
+    // --- Dados do Time 7 (Para o Modal da Home) ---
     const team7MembersData = {
         naruto: {
             name: "Naruto Uzumaki",
@@ -73,32 +75,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --- Funcionalidade de Navegação Ativa e SCROLL SUAVE ---
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.custom-nav-link');
+    // --- SCROLL SUAVE PARA TODOS OS LINKS DA PÁGINA ---
+    // (Isso funciona tanto na Index quanto na página de História)
+    const headerHeight = document.querySelector('.custom-navbar') ? document.querySelector('.custom-navbar').offsetHeight : 0;
     const allAnchorLinks = document.querySelectorAll('a[href^="#"]'); 
-    const headerHeight = document.querySelector('.custom-navbar').offsetHeight;
-
-    const activateNavLink = () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - headerHeight - 50; 
-            if (pageYOffset >= sectionTop) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            const href = link.getAttribute('href');
-            if (href.includes(current) && href.startsWith('#')) {
-                link.classList.add('active');
-            }
-        });
-    };
-
-    window.addEventListener('scroll', activateNavLink);
-    activateNavLink();
 
     allAnchorLinks.forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -111,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const targetElement = document.querySelector(href);
                 if (targetElement) {
                     const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    // Subtrai a altura do menu para não tapar o título
                     const offsetPosition = elementPosition - headerHeight; 
 
                     window.scrollTo({
@@ -128,4 +109,30 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Ativa o link da navbar conforme o scroll (Apenas se as seções existirem, ex: na Home)
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.custom-nav-link');
+    
+    if (sections.length > 0 && navLinks.length > 0) {
+        const activateNavLink = () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - headerHeight - 50; 
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                if (href.includes(current) && href.startsWith('#')) {
+                    link.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', activateNavLink);
+        activateNavLink();
+    }
 });
